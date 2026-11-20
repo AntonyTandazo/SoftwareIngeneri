@@ -4,62 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingeniería de Software</title>
-    <!-- Enlace al CSS externo -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Cabecera principal de la página -->
     <header class="header">
-        <h1>Ingeniería de Software</h1>
-        <nav class="nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#informacion">Información</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <div class="header-contenido">
+            <h1 class="logo">Ingeniería de <span>Software</span></h1>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#informacion">Información</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
-
-    <main class="contenedor">
-
-        <!-- Sección de inicio con imagen -->
-        <section id="inicio">
-            <img src="images/ingenieria-software.jpg" alt="Desarrollo de software y programación">
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <p class="hero-etiqueta">Bienvenido</p>
+                <h2>Construimos software de calidad</h2>
+                <p class="hero-texto">
+                    Aplicamos principios de ingeniería para crear soluciones confiables,
+                    eficientes y mantenibles en el tiempo.
+                </p>
+                <a href="#informacion" class="btn">Conocer más</a>
+            </div>
         </section>
-
-        <!-- Sección de información -->
-        <section id="informacion">
-            <h2>¿Qué es la ingeniería de software?</h2>
-            <p>
-                La ingeniería de software es la disciplina que aplica principios de ingeniería al
-                diseño, desarrollo, prueba y mantenimiento de software de forma sistemática.
-            </p>
-            <p>
-                Su objetivo es producir software de calidad, confiable y mantenible, dentro de los
-                plazos y presupuestos establecidos.
-            </p>
-        </section>
-
-        <!-- Enlace con apariencia de botón que lleva al formulario de contacto -->
-        <a href="#contacto" class="btn">Contáctanos</a>
-
-        <!-- Sección de contacto con formulario -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form class="formulario" action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
+        <div class="contenedor">
+            <section id="informacion" class="seccion">
+                <h2>¿Qué es la ingeniería de software?</h2>
+                <p>
+                    La ingeniería de software es la disciplina que aplica principios de ingeniería al
+                    diseño, desarrollo, prueba y mantenimiento de software de forma sistemática.
+                </p>
+                <p>
+                    Su objetivo es producir software de calidad, confiable y mantenible, dentro de los
+                    plazos y presupuestos establecidos.
+                </p>
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <h3>Diseño</h3>
+                        <p>Arquitecturas claras que facilitan el crecimiento del proyecto.</p>
+                    </div>
+                    <div class="tarjeta">
+                        <h3>Desarrollo</h3>
+                        <p>Código limpio y buenas prácticas para construir soluciones sólidas.</p>
+                    </div>
+                    <div class="tarjeta">
+                        <h3>Calidad</h3>
+                        <p>Pruebas y mantenimiento para garantizar un software confiable.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="cta">
+                <a href="#contacto" class="btn">Contáctanos</a>
+            </div>
+            <section id="contacto" class="seccion">
+                <h2>Contacto</h2>
+                <form class="formulario" action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+        </div>
     </main>
-
 </body>
 </html>
