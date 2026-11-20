@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería de Software</title>
+    <!-- Enlace al CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Cabecera principal de la página -->
+    <header class="header">
+        <h1>Ingeniería de Software</h1>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#informacion">Información</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- Sección de inicio con imagen -->
+        <section id="inicio">
+            <img src="images/ingenieria-software.jpg" alt="Desarrollo de software y programación">
+        </section>
+
+        <!-- Sección de información -->
+        <section id="informacion">
+            <h2>¿Qué es la ingeniería de software?</h2>
+            <p>
+                La ingeniería de software es la disciplina que aplica principios de ingeniería al
+                diseño, desarrollo, prueba y mantenimiento de software de forma sistemática.
+            </p>
+            <p>
+                Su objetivo es producir software de calidad, confiable y mantenible, dentro de los
+                plazos y presupuestos establecidos.
+            </p>
+        </section>
+
+        <!-- Enlace con apariencia de botón que lleva al formulario de contacto -->
+        <a href="#contacto" class="btn">Contáctanos</a>
+
+        <!-- Sección de contacto con formulario -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form class="formulario" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
